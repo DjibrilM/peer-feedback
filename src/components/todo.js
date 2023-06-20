@@ -9,7 +9,7 @@ const todoElement = (content, isActive, id, completed) => {
     if (elements.length > 0) {
       elements.forEach((element) => {
         container.appendChild(
-          TodoElement(
+          todoElement(
             element.content,
             element.isActive,
             element.id, element.completed,
