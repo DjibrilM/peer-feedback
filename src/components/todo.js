@@ -1,6 +1,6 @@
 import { getItems, setItems } from '../utilities/localStorage';
 
-const TodoElement = (content, isActive, id, completed) => {
+const todoElement = (content, isActive, id, completed) => {
   // the following factory function is necessary because of linters
   const printElements = (containerClass, elements) => {
     const container = document.querySelector(`.${containerClass}`);
@@ -97,4 +97,4 @@ const TodoElement = (content, isActive, id, completed) => {
   return element;
 };
 
-export default TodoElement;
+export default todoElement;
